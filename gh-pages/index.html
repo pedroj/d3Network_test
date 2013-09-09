@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bipartite networks of plant-animal interactions in d3Network. Just a test test. : Tests for using d3Network with bipartite networks." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bipartite networks of plant-animal interactions in d3Network. Just a test.</title>
+	/*<![CDATA[*/
+		@import "Scripts/Widgets/HTMLRegion/Paste.css";
+	/*]]>*/
+	</style>
+	    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+	    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+	    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
+	    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+	    <script type="text/javascript" src="Scripts/iWebMediaGrid.js"></script>
+	    <script type="text/javascript" src="Scripts/Widgets/HTMLRegion/Paste.js"></script>
+	    <script type="text/javascript" src="d3Network_files/d3Network.js"></script>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pedroj/d3Network_test">View on GitHub</a>
+
+          <h1 id="project_title">Bipartite networks of plant-animal interactions in d3Network. Just a test test.</h1>
+          <h2 id="project_tagline">Tests for using d3Network with bipartite networks.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pedroj/d3Network_test/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pedroj/d3Network_test/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="d3network_test" class="anchor" href="#d3network_test"><span class="octicon octicon-link"></span></a>d3Network_test</h1>
+
+<p>Tests for using d3Network with bipartite networks. Based in <a href="http://bost.ocks.org/mike/">Mike Bostock</a>'s <a href="http://d3js.org/">D3.js</a>, and <a href="http://christophergandrud.github.io/d3Network/">d3Network code</a> in <a href="http://www.r-project.org/">R</a> by <a href="http://christophergandrud.blogspot.com/p/biocontact.html">Christopher Gandrud</a>. These are great tools for creating interactive network graphs with JavaScript. But we still need some work to get them used for bipartite networks.
+</p>
+<p>Here are two examples of bipartite plant-frugivore networks plotted with the dynamic library d3. Left is the Nava de las Correhuelas interaction network (just the avian frugivore species), in the highlands of Eastern Andalousia. Right, the Hato Raton network, in the lowlands of the Guadalquivir Valley.
+</p>
+<p>You can hover with the mouse on different nodes and displace them to visualize the strength of interaction. In addition the links themselves are highlighted when the mouse hovers on them.
+</p>
+
+      </section>
+    </div>
+<!-- CODE FROM iWeb -->
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 920px; " id="body_content">
+        <div style="margin-left: 0px; position: relative; width: 920px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 35px; margin-top: 0px; opacity: 1.00; position: relative; width: 630px; z-index: 1; ">
+    
+            <div id="widget0-navbar" class="navbar">
+
+      
+              <div id="widget0-bg" class="navbar-bg">
+
+        
+                <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
+                
+      
+</div>
+              
+    
+</div>
+          </div>
+          <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Arial, sans-serif;\n\tfont-size: 1em;\n\tcolor: #666;\n\tmargin: 9px 0px 6px 0px;\n\tline-height: 30px;\n}\n\n.navbar-bg {\n\ttext-align: center;\n}\n\n.navbar-bg ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px;\n}\n\n\nli {\n\tlist-style-type: none;\n\tdisplay: inline;\n\tpadding: 0px 10px 0px 10px;\n}\n\n\nli a {\n\ttext-decoration: none;\n\tcolor: #666;\n}\n\nli a:visited {\n\ttext-decoration: none;\n\tcolor: #666;\n}\n\nli a:hover\r{\r\n \tcolor: #463C3C;\n\ttext-decoration: none;\r}\n\n\nli.current-page a\r{\r\t color: #463C3C;\n\ttext-decoration: none;\n\tfont-weight: bold;\r\r}\n", "current-page-GUID": "493734AD-89A5-4201-ADB0-A65CAAB0C3F6", "isCollectionPage": "NO"});
+//--><!]]></script>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 920px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 920px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="height: 1px; width: 1223px;  height: 1px; left: -200px; position: absolute; top: 3px; width: 1223px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 1223px; ">
+              <img src="d3Network_files/shapeimage_1.jpg" alt="" style="height: 1px; left: 0px; margin-left: 1px; margin-top: 0px; position: absolute; top: 0px; width: 1222px; " />
+            </div>
+          </div>
+          <div class="com-apple-iweb-widget-HTMLRegion" id="widget1" style="height: 614px; left: -2px; opacity: 1.00; position: absolute; top: 14px; width: 451px; z-index: 1; ">
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget1_htmlMarkupURL = ".//d3Network_files/widget1_markup.html";
+//--><!]]></script>
+            <div id="widget1-htmlRegion" class="html_region_widget"></div>
+          </div>
+          <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget1', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+          <div class="com-apple-iweb-widget-HTMLRegion" id="widget2" style="height: 614px; left: 456px; opacity: 1.00; position: absolute; top: 12px; width: 451px; z-index: 1; ">
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget2_htmlMarkupURL = ".//d3Network_files/widget2_markup.html";
+//--><!]]></script>
+            <div id="widget2-htmlRegion" class="html_region_widget"></div>
+          </div>
+          <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget2', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+          <div style="height: 1px; width: 1142px;  height: 1px; left: -222px; position: absolute; top: 628px; width: 1142px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 1142px; ">
+              <img src="d3Network_files/shapeimage_2.jpg" alt="" style="height: 1px; left: 0px; margin-left: 1px; margin-top: 1px; position: absolute; top: 0px; width: 1142px; " />
+            </div>
+          </div>
+          <div style="height: 628px; line-height: 628px; " class="spacer"> </div>
+        </div>
+        <div style="height: 150px; margin-left: 0px; position: relative; width: 920px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+      </div>
+    </div>
+	<!-- END iWeb code -->
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bipartite networks of plant-animal interactions in d3Network. Just a test test. maintained by <a href="https://github.com/pedroj">pedroj</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
