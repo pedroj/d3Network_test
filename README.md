@@ -1,4 +1,4 @@
 d3Network_test
 ==============
 
-Tests for using d3Network with bipartite networks.
+Web pages for the tests using d3Network with bipartite networks.
