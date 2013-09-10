@@ -1,8 +1,9 @@
 # A test of Christopher Gandrud code for d3Network.
 # Pedro Jordano. Sevilla. 8-11 Sept 2014l.
+# Load the d3Network code from github
 devtools::install_github("d3Network", "christophergandrud", ref = "sankey")
-
 library(d3Network)
+
 # Load energy projection data
 library(RCurl)
 
