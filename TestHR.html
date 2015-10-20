@@ -1,31 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <meta charset="utf-8">
 <body> 
  <style>
-#chart {  
+#body {
 height: 500px;
 }
-.node rect {  
-cursor: move;  
-fill-opacity: .9;  
+.node rect {
+cursor: move;
+fill-opacity: .9;
 shape-rendering: crispEdges;
 }
-.node text {  
-font: 12px sans-serif;
-pointer-events: none;  
+.node text {
+font: 12px serif;
+pointer-events: none;
 text-shadow: 0 1px 0 #fff;
 }
-.link {  
-fill: none;  
-stroke: #000;  
+.link {
+fill: none;
+stroke: #000;
 stroke-opacity: .2;
 }
-.link:hover {  
+.link:hover {
 stroke-opacity: .5;
 }
 </style>
 
-<p id="chart"></p>
+<p id="body"></p>
 
 <script src=http://d3js.org/d3.v3.min.js></script>
  <script>
@@ -328,22 +328,22 @@ return sankey;
  var links = [ { "source" : 0, "target" : 18, "value" : 3 }, { "source" : 0, "target" : 24, "value" : 1 }, { "source" : 0, "target" : 25, "value" : 1 }, { "source" : 0, "target" : 27, "value" : 1 }, { "source" : 0, "target" : 29, "value" : 12 }, { "source" : 0, "target" : 30, "value" : 1 }, { "source" : 0, "target" : 31, "value" : 1 }, { "source" : 0, "target" : 32, "value" : 1 }, { "source" : 0, "target" : 33, "value" : 8 }, { "source" : 1, "target" : 20, "value" : 1 }, { "source" : 1, "target" : 24, "value" : 1 }, { "source" : 1, "target" : 25, "value" : 20 }, { "source" : 1, "target" : 26, "value" : 2 }, { "source" : 1, "target" : 27, "value" : 4 }, { "source" : 1, "target" : 29, "value" : 14 }, { "source" : 2, "target" : 18, "value" : 7 }, { "source" : 2, "target" : 19, "value" : 1 }, { "source" : 2, "target" : 20, "value" : 1 }, { "source" : 2, "target" : 21, "value" : 1 }, { "source" : 2, "target" : 22, "value" : 1 }, { "source" : 2, "target" : 23, "value" : 1 }, { "source" : 2, "target" : 24, "value" : 37 }, { "source" : 2, "target" : 25, "value" : 30 }, { "source" : 2, "target" : 26, "value" : 1 }, { "source" : 2, "target" : 27, "value" : 5 }, { "source" : 2, "target" : 29, "value" : 115 }, { "source" : 2, "target" : 30, "value" : 6 }, { "source" : 2, "target" : 31, "value" : 9 }, { "source" : 2, "target" : 32, "value" : 1 }, { "source" : 2, "target" : 33, "value" : 1 }, { "source" : 3, "target" : 19, "value" : 1 }, { "source" : 3, "target" : 24, "value" : 6 }, { "source" : 3, "target" : 29, "value" : 41 }, { "source" : 3, "target" : 30, "value" : 2 }, { "source" : 3, "target" : 31, "value" : 1 }, { "source" : 4, "target" : 29, "value" : 11 }, { "source" : 4, "target" : 30, "value" : 1 }, { "source" : 4, "target" : 31, "value" : 1 }, { "source" : 5, "target" : 29, "value" : 5 }, { "source" : 5, "target" : 30, "value" : 1 }, { "source" : 5, "target" : 31, "value" : 1 }, { "source" : 6, "target" : 28, "value" : 1 }, { "source" : 6, "target" : 29, "value" : 9 }, { "source" : 6, "target" : 30, "value" : 1 }, { "source" : 6, "target" : 31, "value" : 1 }, { "source" : 7, "target" : 25, "value" : 1 }, { "source" : 7, "target" : 27, "value" : 1 }, { "source" : 7, "target" : 29, "value" : 5 }, { "source" : 8, "target" : 19, "value" : 1 }, { "source" : 8, "target" : 20, "value" : 1 }, { "source" : 8, "target" : 21, "value" : 1 }, { "source" : 8, "target" : 24, "value" : 1 }, { "source" : 8, "target" : 25, "value" : 31 }, { "source" : 8, "target" : 27, "value" : 26 }, { "source" : 8, "target" : 28, "value" : 1 }, { "source" : 8, "target" : 29, "value" : 317 }, { "source" : 8, "target" : 30, "value" : 3 }, { "source" : 8, "target" : 31, "value" : 1 }, { "source" : 9, "target" : 25, "value" : 15 }, { "source" : 9, "target" : 27, "value" : 2 }, { "source" : 9, "target" : 29, "value" : 61 }, { "source" : 9, "target" : 32, "value" : 1 }, { "source" : 10, "target" : 27, "value" : 1 }, { "source" : 10, "target" : 29, "value" : 14 }, { "source" : 11, "target" : 22, "value" : 1 }, { "source" : 11, "target" : 24, "value" : 3 }, { "source" : 11, "target" : 27, "value" : 1 }, { "source" : 11, "target" : 28, "value" : 3 }, { "source" : 11, "target" : 29, "value" : 21 }, { "source" : 11, "target" : 30, "value" : 3 }, { "source" : 11, "target" : 31, "value" : 1 }, { "source" : 12, "target" : 18, "value" : 1 }, { "source" : 12, "target" : 19, "value" : 2 }, { "source" : 12, "target" : 20, "value" : 1 }, { "source" : 12, "target" : 21, "value" : 2 }, { "source" : 12, "target" : 22, "value" : 1 }, { "source" : 12, "target" : 24, "value" : 14 }, { "source" : 12, "target" : 25, "value" : 2 }, { "source" : 12, "target" : 26, "value" : 1 }, { "source" : 12, "target" : 27, "value" : 2 }, { "source" : 12, "target" : 28, "value" : 16 }, { "source" : 12, "target" : 29, "value" : 49 }, { "source" : 12, "target" : 30, "value" : 48 }, { "source" : 12, "target" : 31, "value" : 8 }, { "source" : 13, "target" : 28, "value" : 2 }, { "source" : 13, "target" : 29, "value" : 17 }, { "source" : 13, "target" : 30, "value" : 4 }, { "source" : 13, "target" : 31, "value" : 1 }, { "source" : 14, "target" : 19, "value" : 1 }, { "source" : 14, "target" : 24, "value" : 3 }, { "source" : 14, "target" : 29, "value" : 9 }, { "source" : 14, "target" : 31, "value" : 1 }, { "source" : 15, "target" : 18, "value" : 1 }, { "source" : 15, "target" : 19, "value" : 10 }, { "source" : 15, "target" : 20, "value" : 1 }, { "source" : 15, "target" : 21, "value" : 1 }, { "source" : 15, "target" : 22, "value" : 2 }, { "source" : 15, "target" : 23, "value" : 38 }, { "source" : 15, "target" : 24, "value" : 15 }, { "source" : 15, "target" : 25, "value" : 1 }, { "source" : 15, "target" : 26, "value" : 1 }, { "source" : 15, "target" : 28, "value" : 52 }, { "source" : 15, "target" : 29, "value" : 336 }, { "source" : 15, "target" : 30, "value" : 85 }, { "source" : 15, "target" : 31, "value" : 14 }, { "source" : 16, "target" : 19, "value" : 15 }, { "source" : 16, "target" : 20, "value" : 1 }, { "source" : 16, "target" : 21, "value" : 15 }, { "source" : 16, "target" : 22, "value" : 1 }, { "source" : 16, "target" : 23, "value" : 27 }, { "source" : 16, "target" : 24, "value" : 96 }, { "source" : 16, "target" : 25, "value" : 146 }, { "source" : 16, "target" : 26, "value" : 1 }, { "source" : 16, "target" : 27, "value" : 25 }, { "source" : 16, "target" : 28, "value" : 71 }, { "source" : 16, "target" : 29, "value" : 1370 }, { "source" : 16, "target" : 30, "value" : 21 }, { "source" : 16, "target" : 31, "value" : 4 }, { "source" : 16, "target" : 32, "value" : 1 }, { "source" : 16, "target" : 33, "value" : 1 }, { "source" : 17, "target" : 25, "value" : 2 }, { "source" : 17, "target" : 29, "value" : 12 } ] ; 
  var nodes = [ { "name" : "Cyanopica cyanus" }, { "name" : "Turdus philomelos" }, { "name" : "Turdus merula" }, { "name" : "Ficedula hypoleuca" }, { "name" : "Muscicapa striata" }, { "name" : "Luscinia megarhynchos" }, { "name" : "Phoenicurus phoenicurus" }, { "name" : "Saxicola torquata" }, { "name" : "Erithacus rubecula" }, { "name" : "Sturnus unicolor" }, { "name" : "Sylvia undata" }, { "name" : "Sylvia cantillans" }, { "name" : "Sylvia melanocephala" }, { "name" : "Sylvia communis" }, { "name" : "Sylvia hortensis" }, { "name" : "Sylvia borin" }, { "name" : "Sylvia atricapilla" }, { "name" : "Fringilla_coelebs" }, { "name" : "Tamus communis" }, { "name" : "Smilax aspera" }, { "name" : "Asparagus aphyllus" }, { "name" : "Asparagus aculeatus" }, { "name" : "Lonicera periclymenum" }, { "name" : "Rubia pregrina" }, { "name" : "Phillyrea angustifolia" }, { "name" : "Olea europaea" }, { "name" : "Osyris alba" }, { "name" : "Myrtus communis" }, { "name" : "Daphne gnidium" }, { "name" : "Pistacia lentiscus" }, { "name" : "Rhamnus lycioides" }, { "name" : "Rubus ulmifolius" }, { "name" : "Crataegus monogyna" }, { "name" : "Pyrus bourgaeana" } ] ; 
  var margin = {top: 1, right: 1, bottom: 6, left: 1},
-width = 450 - margin.left - margin.right,
+width = 900 - margin.left - margin.right,
 height = 600 - margin.top - margin.bottom;
 
 var formatNumber = d3.format(",.0f"),
-format = function(d) { return formatNumber(d) + " TWh"; },
+format = function(d) { return formatNumber(d); },
 color = d3.scale.category20();
 
-var svg = d3.select("#chart").append("svg")
+var svg = d3.select("body").append("svg")
 .attr("width", width + margin.left + margin.right)
 .attr("height", height + margin.top + margin.bottom)
 .append("g")
 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var sankey = d3.sankey()
-.nodes(d3.values(nodes)) 
-.links(links) 
+.nodes(d3.values(nodes))
+.links(links)
 .nodeWidth(30)
 .nodePadding(10)
 .size([width, height])
